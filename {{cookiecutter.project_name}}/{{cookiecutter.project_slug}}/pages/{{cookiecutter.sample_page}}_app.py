@@ -9,10 +9,11 @@ OUTPUT_ID = "{{cookiecutter.sample_page}}-output-id"
 
 input_box = dbc.InputGroup(
     [
-        dbc.InputGroupAddon("Text", addon_type="prepend"),
-        dbc.Input(id=f"{INPUT_BOX_ID}", placeholder="Place input here", debounce=True)
-    ]
-)
+        dbc.InputGroupText("Text"),
+        dbc.Input(id=f"{INPUT_BOX_ID}", placeholder="Place input here", debounce=True),
+    ],
+    size="lg"
+),
 
 
 def get_layout():
